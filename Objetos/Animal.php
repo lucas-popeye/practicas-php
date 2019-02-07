@@ -16,5 +16,11 @@
 			//Método posible para acceder a las propiedades
 			//color y peso
 		}
+
+		public function añadir_un_kilo()
+		{
+			$this->peso = $this->peso + 1;
+		}
+		
 	}
 ?>
