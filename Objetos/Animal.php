@@ -5,28 +5,40 @@
 		private $color = "gris";
 		private $peso = 10;
 
+		//constantes de clase
+		const PESO_LIGERO = 5;
+		const PESO_MEDIO = 10;
+		const PESO_PESADO = 15;
+
+
+		
+		public function _construct ($color,$peso)
+		//constructor que solicita 2 argumentos.
+		{
+			echo "Llamada al constructor.<br>";
+			$this->color = $color;//inicialización del color
+			$this->peso = $peso;//inicialización del peso
+		}
+
 		//accesos
 		public function getColor()
 		{
-			return $this->color; //devuelve el color
+			return $this->color;//devuelve el color
 		}
-
-		public function setColor($color)
+		public function setColor()
 		{
 			$this->color = $color; //escrito en el atributo color
-
 		}
-		
 		public function getPeso()
 		{
-			 return $this->peso = $peso; //devuelve el peso
+			return $this->peso;//devuelve el peso
 		}
-
-
 		public function setPeso()
 		{
-			 $this->peso = $peso; //escrito en el atributo peso
+			$this->color = $peso; //escrito en el atributo peso
+
 		}
+
 
 		//métodos
 
