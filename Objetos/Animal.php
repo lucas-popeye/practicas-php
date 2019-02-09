@@ -11,26 +11,38 @@
 			return $this->color; //devuelve el color
 		}
 
-		public function setColor()
+		public function setColor($color)
 		{
 			$this->color = $color; //escrito en el atributo color
 
 		}
+		
+		public function getPeso()
+		{
+			 return $this->peso = $peso; //devuelve el peso
+		}
+
 
 		public function setPeso()
 		{
 			 $this->peso = $peso; //escrito en el atributo peso
 		}
 
-		public function comer()
+		//métodos
+
+		public function comer_animal(Animal $animal_comido)
 		{
-			//Método posible para acceder a las propiedades
-			//color y peso
+			//El animal que come, aumenta su peso tanto
+			//como el del animal comido
+			$this->peso = $this->peso + $animal_comido->peso;
+			//el peso del animal comido y su color se restablecen a 0
+			$animal_comido->peso = 0;
+			$animal_comido->color = " ";
 		}
 
 		public function moverse ()
 		{
-			//Método posible para acceder a las propiedades
+			//Método que pueda acceder a las propiedades
 			//color y peso
 		}
 
