@@ -49,7 +49,7 @@
 
 		//métodos públicos
 
-		public function comer_animal(Animal $animal_comido)
+		final public function comer_animal(Animal $animal_comido)
 		{
 			//el animal que come aumenta su peso tano como
 			//el del animal comido
