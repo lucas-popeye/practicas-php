@@ -1,5 +1,5 @@
 <?php
-	class Pez extends Animal
+	 final class Pez extends Animal
 	{
 		private $vive_en_el_mar; //tipo de pez
 
